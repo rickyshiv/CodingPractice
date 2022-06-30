@@ -2,21 +2,19 @@
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		DoublyLinkedList dll=new DoublyLinkedList();
-		// dll.create(1);
-		dll.insert(23,1);
-		dll.insert(24, 2);
-		//System.out.println(dll.head.value);
-		dll.traverse();
-		//dll.reversetraverse();
-		//dll.search(23);
-		dll.delete(0);
-		dll.traverse();
-		dll.deleteAll();
-		dll.traverse();
-		
-		
+		CircularDoubly cdll=new CircularDoubly();
+		cdll.create(4);
+		// System.out.println(cdll.head.value);
+		cdll.insertNode(10, 1);
+		cdll.traverseCDLL();
+		cdll.reverseTraversalCDLL();
+		cdll.searchNode(10);
+		cdll.deleteNode(1);
+		cdll.traverseCDLL();
+		 //System.out.println(cdll.head.next.value);
+		cdll.deleteCDLL();
+		cdll.traverseCDLL();
+	
 
 	}
 
